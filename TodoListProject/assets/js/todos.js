@@ -4,8 +4,9 @@ $("ul").on("click", "li", function(){
 	$(this).toggleClass("completed");
 });
 
-// Click on X to delete todo
-// When X is clicked inside of a ul, delete the span
+// Click on trash can icon to delete todo
+// When trash can icon is clicked inside of a ul, delete the span
+// containing the todo
 $("ul").on("click","span",function(event){
 	//span  // li faded out
 	$(this).parent().fadeOut(500,function(){
